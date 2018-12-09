@@ -6,7 +6,7 @@ body{
     height: 100%;
     width: 100%;
     background-image: url(header.jpg);
-    background-size: cover;
+    background-size: cover;   
     background-repeat: no-repeat;
     background-position:
         top;
@@ -17,9 +17,14 @@ h1{
     color: white;
     margin-top: 100px;
 }
+h2{
+    text-align: center;
+    color: #ffaaaa;
+}
 .wrapper{
     display: flex;
     justify-content: center;
+    
 }
 .btn{
     border-radius: 100px;
@@ -32,4 +37,12 @@ h1{
 .btn:hover{
     background-color: rgba(85, 0, 0, 0.5);
     border-color: rgba(85, 0, 0, 0.5);
+}
+#watermark{
+    position:fixed;
+    bottom:5px;
+    right: 555px;
+    opacity:0.5;
+    z-index:99;
+    color:white;
 }
