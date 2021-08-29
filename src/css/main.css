@@ -83,7 +83,7 @@ section {
 #skill-tree li {
   background: hsl(120, 100%, 45%);
   border-radius: 15px;
-  padding: .3em;
+  padding: .4em;
 }
 
 #project-container {
