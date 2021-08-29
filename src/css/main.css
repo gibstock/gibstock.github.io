@@ -1,10 +1,15 @@
 /* Mobile First  */
+
+/* Color Variables  */
 :root {
   --dark: #787878;
   --light: #a2a2a2;
   --bold: #ffe;
   --cap: hsl(0, 4%, 16%);
 }
+
+/* Standards  */
+
 body {
   letter-spacing: 2px;
   line-height: 1.3em;
@@ -32,12 +37,11 @@ em {
 p {
   color: var(--light);
 }
-hr {
-  width: 75%;
-}
+
 /* HEADER  */
 
 #main-header {
+  position: relative;
   background: var(--cap);
   padding: 4.5em 1.5em;
   height: 100%;
@@ -59,15 +63,20 @@ hr {
   box-shadow: 0 2px 2px 1px hsl(113, 30%, 20%);
   margin: 0 0 1em 0;
 }
+main {
+  width: 100%;
+  margin: 0;
+}
+/* Section Styles  */
 
 section {
-  padding: 1em;
+  padding: 1.5em;
   margin-bottom: 1em;
 }
 
+/* Skill List  */
 #skill-tree {
   display: flex;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
   gap: 1em;
 }
@@ -76,18 +85,28 @@ section {
   border-radius: 15px;
   padding: .3em;
 }
+
+#project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ARTICLES  */
+
 article {
   max-width: 100%;
   margin-bottom: 1em;
-  /* border-bottom: 1px solid var(--light);
-  border-bottom-left-radius: 2%;
-  border-bottom-right-radius: 2%; */
 }
 article  img {
   max-width: 100%;
   border: 1px solid var(--dark);
   border-radius: 12px;
 }
+
+/* Clip Path Mail Icon */
+
 #email-wrapper {
   display: flex;
   align-items: center;
@@ -122,11 +141,51 @@ article  img {
   clip-path: polygon(4% 8%, 50% 54%, 96% 8%, 96% 96%, 4% 96%);
   border-radius: 15%;
 }
+
+/* FOOTER  */
+
 footer {
   background: var(--cap);
   color: #fff;
   padding: 1em;
+  
+}
+#mobile {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#desktop {
+  display: none;
+}
+
+/* TABLET SIZE  */
+@media only screen and (min-device-width: 768px) {
+  #project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+}
+
+/* DESKTOP SIZE  */
+@media only screen and (min-device-width: 1024px) {
+  #main-header {
+    position: fixed;
+    width: 25%;
+    height: 100%;
+  }
+  #mobile {
+    display: none;
+  }
+  #desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    width: 70%;
+    margin-left: 30%;
+  }
+
 }
