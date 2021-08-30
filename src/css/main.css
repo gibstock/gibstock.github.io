@@ -84,6 +84,12 @@ section {
   background: hsl(120, 100%, 45%);
   border-radius: 15px;
   padding: .4em;
+  color: hsl(0, 100%, 10%);
+}
+#skill-tree li:hover {
+  background: hsl(120, 100%, 25%);
+  color: hsla(0, 0%, 100%, 0.74);
+
 }
 
 #project-container {
@@ -163,8 +169,21 @@ footer {
 @media only screen and (min-device-width: 768px) {
   #project-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(auto, minmax(0, 1fr));
     gap: 2em;
+  }
+  figure img {
+    transform: scale(1);
+    border-radius: 12px;
+    transition: transform 1s ease,
+    border-radius 1s ease;
+  }
+  figure img:hover {
+    transform: scale(1.05);
+    border-radius: 0;
+    transition: transform 1s ease,
+    border-radius 1s ease;
   }
 }
 

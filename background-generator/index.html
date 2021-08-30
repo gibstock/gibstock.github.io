@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Background Generator</title>
+    <link rel="stylesheet" href="/src/css/style.css" type="text/css" />
+    <script defer type="text/javascript" src="/src/js/script.js"></script>
+</head>
+<body id="gradient">
+    <header>
+        <h1>Gradient Me</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div id="color-picker">
+                <p class="lg-format"><strong>1) Use random button or select colors</strong></p>
+                <button id="random">Randomizer</button>
+                <input class="color1" type="color" name="color1" value="#389ff2">
+                <input class="color2" type="color" name="color2" value="#d1add1">
+            </div>
+            <div id="direction-select">
+                <p class="lg-format"><strong>2)</strong></p>
+                <label for="direction">Pick a pleasing angle</label>
+                <select name="direction" id="direction">
+                    <option value="to right">To Right</option>
+                    <option value="to left">To Left</option>
+                    <option value="0deg">To Top</option>
+                    <option value="to bottom">To Bottom</option>
+                    <option value="45deg">Diagonal 1</option>
+                    <option value="135deg">Diagonal 2</option>
+                    <option value="225deg">Diagonal 3</option>
+                    <option value="315deg">Diagonal 4</option>
+                </select>
+            </div>
+            <div id="style-select">
+                <p class="lg-format"><strong>3) Or</strong></p>
+                <label for="styler">Select gradient style</label>
+                <select name="styler" id="styler">
+                    <option value="linear-gradient" selected>Linear</option>
+                    <option value="radial-gradient">Radial</option>
+                    <option value="conic-gradient">Conic</option>
+                </select>
+            </div>
+            <div id="result">
+                <p class="lg-format"><strong>4)</strong></p>
+                <h2>Here is your gradient</h2>
+                <div id="result-output">
+                    <input type="text" name="colorResult" id="colorResult" size='35'>
+                    <button type="submit" id="copy">copy</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>&copy; 2021 Andre Gonzales</h3>
+    </footer>
+   
+</body>
+</html>
