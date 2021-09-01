@@ -42,7 +42,7 @@ h3 {
   font-size: 1.3em;
   color: var(--dark);
 }
-em {
+.em-bright {
   color: var(--bold);
 }
 p {
