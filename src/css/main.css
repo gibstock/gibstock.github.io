@@ -6,6 +6,16 @@
   --light: #a2a2a2;
   --bold: #ffe;
   --cap: hsl(0, 4%, 16%);
+  --punch: hsl(120, 100%, 45%);
+  --line: hsl(120, 30%, 75%);
+}
+
+.mobile-break {
+  display: block;
+}
+.punch {
+  font-size: calc(1em + 3px);
+  color: var(--punch);
 }
 
 /* Standards  */
@@ -13,6 +23,7 @@
 body {
   letter-spacing: 2px;
   line-height: 1.3em;
+  font-family: 'Raleway', sans-serif;
 }
 h2,
 h3,
@@ -73,20 +84,32 @@ section {
   padding: 1.5em;
   margin-bottom: 1em;
 }
-
+/* Table  */
+table {
+  margin-bottom: 1em;
+}
+td {
+  padding: .5em;
+}
+.line {
+  color: var(--dark);
+}
+.comparison {
+  color: hsl(200, 70%, 70%);
+}
 /* Skill List  */
-#skill-tree {
+.skill-tree {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
 }
-#skill-tree li {
+.skill-tree li {
   background: hsl(120, 100%, 45%);
   border-radius: 15px;
   padding: .4em;
   color: hsl(0, 100%, 10%);
 }
-#skill-tree li:hover {
+.skill-tree li:hover {
   background: hsl(120, 100%, 25%);
   color: hsla(0, 0%, 100%, 0.74);
 
@@ -185,6 +208,26 @@ footer {
     transition: transform 1s ease,
     border-radius 1s ease;
   }
+  /* Table  */
+table {
+  background-color: hsl(360, 0%, 30%);
+  width: 80%;
+  margin-bottom: 1em;
+}
+td {
+  padding: 15px;
+}
+.line {
+  color: #afafaf;
+  border-right: 1px solid var(--line);
+}
+
+.green-border {
+  border-right: 1px solid var(--punch);
+}
+.mobile-break {
+  display: none;
+}
 }
 
 /* DESKTOP SIZE  */
