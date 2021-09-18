@@ -192,8 +192,8 @@ footer {
 /* iphone se  */
 @media screen and (max-width: 321px) {
   #avatar img {
-    max-width: 300px;
-    height: auto;
+    width: 240px;
+    height: 240px;
   }
 }
 /* TABLET SIZE  */
