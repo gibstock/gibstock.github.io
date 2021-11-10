@@ -7,11 +7,26 @@
   <title>Andre Gonzales | Portfolio</title>
   <link rel="stylesheet" href="/src/css/reset.css">
   <link rel="stylesheet" href="/src/css/main.css">
+  <script defer src="/src/js/main.js"></script>
+  <link rel="icon" href="/favicon.png">
 </head>
 <body>
   <header id="main-header">
     <div id="main-header-container">
-      <nav></nav>
+      <nav>
+        <div class="mobile-target">
+          <div id="mobile-menu">
+        </div>
+        </div>
+        <div id="nav-overlay">
+          <div id="mobile-menu-inner"></div>
+          <ul id="mobile-ul">
+            <li><a href="#me">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
       <div id="avatar">
         <img src="/src/img/profile2.webp" alt="I am very excited to meet you" width="1600" height="1600">
         <h2>Hi, I'm <br> <em class="em-bright"><strong>Andre Gonzales</strong></em></h2>
@@ -69,6 +84,9 @@
         <li>PHP</li>
         <li>React</li>
         <li>Node.JS</li>
+        <li>Express.JS</li>
+        <li>MariaDB</li>
+        <li>MySQL</li>
       </ul>
       <!-- <ul>
         <h2>Other Attributes</h2>
@@ -95,10 +113,10 @@
         </article>
         <article>
           <figure>
-            <a href="https://gifted-noether-5963d4.netlify.app/" target="_blank"><img src="/src/img/thumbs/gradient-me.jpg" alt="preview of gradient generator site"></a>
+            <a href="https://whatfromapi.herokuapp.com/" target="_blank"><img src="/src/img/thumbs/what-from.png" alt="preview of the WhatFrom? API"></a>
             <figcaption>
-              <a href="https://gifted-noether-5963d4.netlify.app/"><h3>Gradient Me</h3></a>
-              <p>A website that generates random gradients and supplies the css code for backgrounds.</p>
+              <a href="https://whatfromapi.herokuapp.com/"><h3>WhatFrom? API</h3></a>
+              <p>I created an API that fetches data from IMDB.com in order to display current actor infromation.</p>
             </figcaption>
           </figure>
         </article>
