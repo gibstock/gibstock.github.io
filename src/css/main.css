@@ -176,7 +176,6 @@ nav {
   border-radius: 25px;
   transform-origin: center left;
   transform: translateY(-.5em) rotate(30deg);
-  /* visibility: hidden; */
   z-index: -10;
 }
 #mobile-menu-inner::after {
@@ -190,7 +189,6 @@ nav {
   border-radius: 25px;
   transform-origin: center left;
   transform: translateY(.5em) rotate(-30deg);
-  /* visibility: hidden; */
   z-index: -10;
 }
 
@@ -287,6 +285,16 @@ article  img {
   border: 1px solid var(--dark);
   border-radius: 12px;
 }
+.tech ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
+  color: var(--dark);
+
+}
+
+
 
 /* Clip Path Mail Icon */
 
