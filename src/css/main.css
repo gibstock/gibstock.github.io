@@ -254,6 +254,7 @@ td {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+  margin-block-end: 1em;
 }
 .skill-tree li {
   background: hsl(120, 100%, 45%);
