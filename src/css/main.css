@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* Mobile First  */
 
 /* Color Variables  */
@@ -121,6 +124,7 @@ nav {
   top: 0;
   right: 1em;
   z-index: 5;
+  cursor: pointer;
 }
 
 #mobile-menu{
@@ -132,6 +136,7 @@ nav {
   right: 0;
   border-radius: 25px;
   visibility: visible;
+  cursor: pointer;
 }
 #mobile-menu::before {
   content:'';
