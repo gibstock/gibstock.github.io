@@ -6,10 +6,10 @@ html {
 /* Color Variables  */
 :root {
   --dark: #787878;
-  --light: #a2a2a2;
+  --light: #1a1919;
   --bold: #ffe;
   --cap: hsl(0, 4%, 16%);
-  --punch: hsl(120, 100%, 45%);
+  --punch: hsl(120, 100%, 35%);
   --line: hsl(120, 30%, 75%);
   --shadow: hsl(195, 10%, 30%);
 }
@@ -20,6 +20,7 @@ html {
 .punch {
   font-size: calc(1em + 3px);
   color: var(--punch);
+  font-weight: bold;
 }
 
 /* Standards  */
@@ -41,6 +42,7 @@ h2 {
   font-size: 1.5em;
   color: var(--dark);
   margin-bottom: 1em;
+  font-weight: bold;
 }
 h3 {
   font-size: 1.3em;
@@ -51,6 +53,12 @@ h3 {
 }
 p {
   color: var(--light);
+}
+small a{
+  font-size: .8rem;
+  color: var(--dark);
+  text-decoration: none;
+  margin-bottom: 1.5em;
 }
 
 /* HEADER  */
